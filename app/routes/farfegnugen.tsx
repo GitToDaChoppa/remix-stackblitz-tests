@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react';
 
-export default function ChungusRoute() {
+export default function FarfRoute() {
   return (
     <div>
       <h1
@@ -10,7 +10,7 @@ export default function ChungusRoute() {
           lineHeight: '1.4',
         }}
       >
-        Chungus is Among Us.
+        farfegnugen The German word for "Driving Pleasure."
       </h1>
 
       <p
@@ -25,8 +25,14 @@ export default function ChungusRoute() {
       </p>
       <div>
         <ul style={{ listStyle: 'none' }}>
-          <li>
-            <Link to="/">back</Link>
+          <li className="link">
+            <Link
+              className="link"
+              style={{ textDecoration: 'none', color: 'black' }}
+              to="/"
+            >
+              back
+            </Link>
           </li>
         </ul>
       </div>

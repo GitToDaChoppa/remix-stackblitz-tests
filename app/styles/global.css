@@ -1,0 +1,13 @@
+html {
+  background-color: aliceblue;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+  color: red;
+}
+
+.link:hover {
+  color: red;
+}

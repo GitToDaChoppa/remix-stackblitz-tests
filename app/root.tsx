@@ -8,10 +8,11 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
-const globalStyles = '~/global.css';
+const styles = './styles/global.css';
 
 export const links: LinksFunction = () => {
   return [
+    { rel: 'stylesheet', href: styles },
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     {
       rel: 'preconnect',
@@ -26,11 +27,10 @@ export const links: LinksFunction = () => {
       href: 'https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Sarpanch:wght@900&display=swap',
       rel: 'stylesheet',
     },
-    { rel: 'stylesheet', href: globalStyles },
   ];
 };
 export const meta: MetaFunction = () => {
-  return { title: "Brando's Remix Playground on Stackblitz" };
+  return { title: 'Butthole Test' };
 };
 
 export default function App() {
@@ -39,8 +39,8 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <Meta />
         <Links />
+        <Meta />
       </head>
       <body>
         <Outlet />
